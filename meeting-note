@@ -1,17 +1,13 @@
-# Meeting Notes – Requirement Discussion
+1. Meeting Notes – Requirement Discussion
 
-**Date:** 12/01/2026  
-**Participants:** A, B, C  
+Ngày 12/01/2026
+Thành viên tham gia: Tùng, Công, Phương, Lập, Hải, Tuân
 
-## Topics
+2. Topics
 - Thảo luận yêu cầu hệ thống
 - Thống nhất phạm vi chức năng
 
-## Decisions
-- Chọn QR code cho điểm danh
-- Điểm rèn luyện tự động
-
-## Action Items
-- A: Vẽ BPMN
-- B: Viết Use Case
-- C: Tổng hợp Issue
+3. Action Items
+- Công: Vẽ BPMN
+- Tùng: Tổng hợp Issue, Ghi chép cuộc họp
+- Tuân: Xác định tính cấp thiết của dự án
