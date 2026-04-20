@@ -1,0 +1,147 @@
+name: Scenario
+description: Detailed scenario (instance of a Use Case)
+title: "[SCN-XXX] <Scenario Name>"
+labels:
+  - type:scenario
+
+body:
+  - type: input
+    id: scenario_id
+    attributes:
+      label: Scenario ID
+      description: Unique Scenario identifier (e.g. SCN-001)
+      placeholder: SCN-001
+    validations:
+      required: true
+
+  - type: input
+    id: scenario_name
+    attributes:
+      label: Scenario Name
+      description: Short descriptive name
+      placeholder: Successful payment
+    validations:
+      required: true
+
+  - type: input
+    id: related_use_case
+    attributes:
+      label: Related Use Case
+      description: Reference Use Case ID
+      placeholder: UC-028
+    validations:
+      required: true
+
+  - type: dropdown
+    id: scenario_type
+    attributes:
+      label: Scenario Type
+      description: Type of scenario
+      options:
+        - Basic Flow
+        - Alternate Flow
+        - Exception Flow
+    validations:
+      required: true
+
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What the actor wants to achieve
+      placeholder: |
+        The user wants to complete ...
+    validations:
+      required: true
+
+  - type: input
+    id: primary_actor
+    attributes:
+      label: Primary Actor
+      placeholder: Customer / Student / Admin
+    validations:
+      required: true
+
+  - type: textarea
+    id: preconditions
+    attributes:
+      label: Preconditions
+      placeholder: |
+        - User is logged in
+        - Data is available
+    validations:
+      required: true
+
+  - type: textarea
+    id: trigger
+    attributes:
+      label: Trigger
+      placeholder: User clicks ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Scenario Steps
+      description: Detailed step-by-step interaction
+      placeholder: |
+        1. Actor performs action
+        2. System responds
+        3. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: postconditions
+    attributes:
+      label: Postconditions
+      placeholder: |
+        - Operation completed
+        - Data stored
+    validations:
+      required: true
+
+  - type: textarea
+    id: business_rules
+    attributes:
+      label: Business Rules
+      description: Rules applied in this scenario
+      placeholder: |
+        - Rule 1: ...
+        - Rule 2: ...
+    validations:
+      required: false
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      placeholder: |
+        - Additional notes or assumptions
+    validations:
+      required: false
+
+  - type: dropdown
+    id: status
+    attributes:
+      label: Status
+      options:
+        - Draft
+        - Approved
+        - Implemented
+        - Tested
+        - Done
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options:
+        - High
+        - Medium
+        - Low
+    validations:
+      required: true
