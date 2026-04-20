@@ -172,7 +172,7 @@ body:
     attributes:
       label: Difficult
       description: difficult issues
-      option:
+      options:
         - ez
         - medium
         - hard
