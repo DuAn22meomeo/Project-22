@@ -68,3 +68,11 @@ body:
     attributes:
       label: Origin (Trace From)
       description: Link related Need issues (e.g. #12)
+  - type: dropdown
+    attributes:
+      label: State
+      options:
+        - được đề xuất
+        - đã được phê duyệt
+        - chờ triển khai
+        - đang được triể
