@@ -168,6 +168,16 @@ body:
       required: false
 
   - type: dropdown
+    id: difficult
+    attributes:
+      label: Difficult
+      description: difficult issues
+      option:
+        - ez
+        - medium
+        - hard
+        
+  - type: dropdown
     id: status
     attributes:
       label: Status
